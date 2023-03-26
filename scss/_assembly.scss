@@ -1,0 +1,94 @@
+.assembly{
+    background: #272727;
+    .assembly_block{
+        display: flex;
+        align-items: center;
+        position: relative;
+        // justify-content: space-between;
+        @media #{$big_tab}{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .assembly_content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 70px;
+            @media #{$tab}{
+                padding-left: 51px;
+            }
+            @media #{$big_tab}{
+                padding-bottom: 80px;
+                padding-left: 0;
+            }
+            .section_title{
+                width: 450px;
+                font-size: 35px;
+                @media #{$laptop}{
+                    font-size: 30px;
+                    line-height: 49px;
+                    width: 100%;
+                }
+                @media #{$big_tab}{
+                    font-size: 28px;
+                    line-height: 34px;
+                }
+            }
+        }
+        .center{
+            position: absolute;
+            left: 18%;
+            bottom: 33px;
+            @media #{$laptop}{
+                left: 20%;
+            }
+            @media #{$tab}{
+                left: 17%;
+            }
+            @media #{$big_tab}{
+                left: 50%;
+                bottom: 386px;
+            }
+            @media #{$small_tab}{
+                left: 32%;
+            }
+            @media #{$big_mobile}{
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                width: 300px;
+            }
+            @media #{$mobile}{
+                bottom: 54%;
+            }
+            img{
+                @media #{$laptop}{
+                    width: 350px;
+                }
+                @media #{$tab}{
+                    height: 190px;
+                }
+            }
+        }
+        .assembly_left{
+            @media #{$big_tab}{
+                width: 100%;
+                margin-bottom: 80px;
+            }
+            
+            img{
+                width: 600px;
+                @media #{$laptop}{
+                    width: 500px;
+                }
+                @media #{$tab}{
+                    width: 480px;
+                    height: 416px;
+                }
+                @media #{$big_tab}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

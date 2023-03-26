@@ -1,0 +1,84 @@
+.scheme_works{
+    padding: 80px 0;
+    background: #F3F3F3;
+    .scheme_works_block{
+        .scheme_works_box{
+            display: flex;
+            gap: 0 31px;
+            margin-bottom: 60px;
+            @media #{$tab}{
+                gap: 0 20px;
+            }
+            @media #{$big_tab}{
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 40px 0;
+            }
+            .scheme_work_item{
+                width: calc(33% - 21px);
+                @media #{$tab}{
+                    width: calc(33% - 13px);
+                }
+                @media #{$big_tab}{
+                    width: 100%;
+                }
+                .scheme_work_item_top{
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 120%;
+                    color: #BF9A45;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 6px;
+                    margin-bottom: 34px;
+                    img{
+                        @media #{$laptop}{
+                            width: 250px;
+                        }
+                        @media #{$big_mobile}{
+                            width: 80%;
+                        }
+                    }
+                }
+                .scheme_work_item_title{
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 120%;
+                    color: #272727;
+                    margin-bottom: 30px;
+                    @media #{$big_tab}{
+                        font-size: 24px;
+                    }
+                }
+                .scheme_work_item_description{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #272727;
+                }
+            }
+        }
+        .scheme_works_actions{
+            display: flex;
+            align-items: center;
+            gap: 0 29px;
+            @media #{$tab}{
+                gap: 0 20px;
+            }
+            @media #{$big_mobile}{
+                flex-direction: column;
+                gap: 20px 0;
+            }
+            a{
+                width: calc(50% - 15px);
+                @media #{$tab}{
+                    width: calc(50% - 10px);
+                }
+                @media #{$big_mobile}{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}

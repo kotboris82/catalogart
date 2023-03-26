@@ -1,0 +1,176 @@
+.mosaic{
+    padding: 70px 0;
+    .mosaic_block{
+        display: flex;
+        gap: 0 60px;
+        @media #{$big_tab}{
+            flex-direction: column;
+            gap: 20px 0;
+        }
+        .mosaic_content{
+            position: relative;
+            @media #{$big_tab}{
+                order: 1;
+            }
+            .text{
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 150%;
+                color: #272727;
+                margin-bottom: 30px;
+                @media #{$laptop}{
+                    font-size: 26px;
+                }
+                @media #{$big_tab}{
+                    font-size: 22px;
+                }
+                @media #{$small_tab}{
+                    margin-bottom: 20px;
+                }
+            }
+            .subtitle{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #272727;
+                margin-bottom: 12px;
+            }
+            .mosaic_date{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #272727;
+                opacity: 0.5;
+                margin-bottom: 30px;
+            }
+            .mosaic_actions{
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                @media #{$big_tab}{
+                    flex-direction: column;
+                    gap: 20px 0;
+                }
+                @media #{$small_tab}{
+                    margin-bottom: 40px;
+                }
+                a{
+                    @media #{$big_tab}{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .delivery_btn{
+                    color: #F3F3F3;
+                }
+                .call_measurer_btn{
+                    filter: none;
+                }
+            }
+        }
+        .mosaic_right{
+            @media #{$big_tab}{
+                order: 2;
+            }
+            @media #{$small_tab}{
+                display: none;
+            }
+            a{
+                img{
+                    @media #{$laptop}{
+                        width: 470px;
+                    }
+                    @media #{$big_tab}{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+.mosaic_right_mobile{
+    display: none;
+    @media #{$small_tab}{
+        display: block;
+        text-align: center;
+        a{
+            img{
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.mosaic_slider_mobile{
+    display: none;
+    @media #{$small_tab}{
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        justify-content: center;
+    }
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #BF9A45;
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+    }
+    .back{
+        img{
+            transform: rotate(180deg);
+        }
+    }
+}
+.mosaic_slider{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    position: absolute;
+    bottom: 40px;
+    @media #{$big_tab}{
+        bottom: -190%;
+        left: 0;
+        right: 0;
+        width: 250px;
+        margin: auto;
+    }
+   
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #BF9A45;
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+    }
+    .back{
+        img{
+            transform: rotate(180deg);
+        }
+    }
+    @media #{$small_tab}{
+        display: none;
+    }
+}
+.catalog_slider{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    margin-top: 50px;
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #BF9A45;
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        img{
+            transform: rotate(180deg);
+        }
+    }  
+}

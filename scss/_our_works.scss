@@ -1,0 +1,96 @@
+.our_works{
+    padding: 80px 0;
+    .our_works_block{
+        .subtitle{
+            margin-bottom: 60px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #272727;
+        }
+        .our_works_action{
+            margin-top: 60px;
+        }
+        .our_works_box{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            @media #{$tab}{
+                gap: 20px;
+            }
+            @media #{$big_tab}{
+                flex-direction: column;
+            }
+            .our_work_item{
+                width: calc(50% - 20px);
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                @media #{$laptop}{
+                    flex-direction: column;
+                }
+                @media #{$big_tab}{
+                    width: 100%;
+                    align-items: flex-start;
+                }
+                .our_work_item_content{
+                    display: flex;
+                    flex-direction: column;
+                    .our_work_item_title{
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 120%;
+                        color: #272727;
+                        margin-bottom: 30px;
+                        @media #{$big_tab}{
+                            font-size: 22px;
+                        }
+                    }
+                    .our_work_item_description{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #272727;
+                        margin-bottom: 20px;
+                    }
+                    .our_work_item_date{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #272727;
+                        margin-bottom: 30px;
+                    }
+                    .our_work_item_action{
+                        
+                        a{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #272727;
+                            padding: 10px 15px;
+                            border: 1px solid #272727;
+                            display: inline-block;
+                            transition: all ease 0.4s;
+                            &:hover{
+                                color: #F3F3F3;
+                                background-color: #272727;
+                            }
+                            
+                        }
+                    }
+                }
+                @media #{$laptop}{
+                    .our_work_item_left{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        img{
+                            width: 100%;
+                            height: 370px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

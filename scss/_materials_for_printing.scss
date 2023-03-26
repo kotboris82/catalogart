@@ -1,0 +1,54 @@
+.materials_for_printing{
+    padding: 70px 0;
+    background: #F3F3F3;
+    .materials_for_printing_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 90px;
+        @media #{$laptop}{
+            gap: 0 80px;
+        }
+        @media #{$tab}{
+            gap: 0 50px;
+        }
+        @media #{$big_tab}{
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 40px 0;
+        }
+        .materials_for_printing_content{
+            display: flex;
+            flex-direction: column;
+            @media #{$big_tab}{
+                order: 1;
+            }
+            .materials_for_printing_description{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #272727;
+            }
+        }
+        .materials_for_printing_left{
+            @media #{$big_tab}{
+                order: 2;
+            }
+            a{
+                img{
+                    width: 500px;
+                    @media #{$laptop}{
+                        width: 440px;
+                        // height: 370px;
+                    }
+                    @media #{$tab}{
+                        width: 400px;
+                    }
+                    @media #{$big_tab}{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

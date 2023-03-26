@@ -1,0 +1,49 @@
+.plotters{
+    padding: 70px 0;
+    background: #F3F3F3;
+    .plotters_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 90px;
+        @media #{$laptop}{
+            gap: 0 80px;
+        }
+        @media #{$tab}{
+            gap: 0 50px;
+        }
+        @media #{$big_tab}{
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 40px 0;
+        }
+        .plotters_content{
+            display: flex;
+            flex-direction: column;
+            
+            .plotters_description{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #272727;
+            }
+        }
+        .plotters_right{
+            a{
+                img{
+                    width: 500px;
+                    @media #{$laptop}{
+                        width: 440px;
+                        // height: 346px;
+                    }
+                    @media #{$tab}{
+                        width: 400px;
+                    }
+                    @media #{$big_tab}{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

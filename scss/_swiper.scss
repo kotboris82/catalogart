@@ -1,0 +1,147 @@
+.white_flowers_left{
+  .mySwiper{
+    @media #{$mobile}{
+      display: none;
+    }
+    .swiper {
+      width: 100%;
+      height: 70px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .mySwiper2{
+    .swiper {
+      width: 100%;
+      height: 415px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    // height: 80%;
+    width: 100%;
+    height: 415px;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    // padding: 10px 0;
+    padding-top: 30px;
+  }
+
+  .mySwiper{
+    .swiper-slide {
+        width: 25%;
+        height: 100%;
+        // opacity: 0.4;
+      }
+  }
+
+  .mySwiper{
+    .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+  }
+
+  .swiper-slide{
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+  
+
+
+  .mySwiper2{
+    position: relative;
+    // padding: 0 20px;
+    }
+    .mySwiper2{
+        .swiper-prev{
+            left: -30px;
+            z-index: 1;
+            @media #{$small_tab}{
+              width: 50px;
+              height: 50px;
+              left: -15px;
+            }
+            @media #{$big_mobile}{
+              width: 35px;
+              height: 35px;
+              left: 10px;
+            }
+        }
+    }
+    .mySwiper2 {
+        .swiper-next{
+            right: -30px;
+            z-index: 1;
+            transform: rotate(180deg);
+            @media #{$small_tab}{
+              width: 50px;
+              height: 50px;
+              right: -15px;
+            }
+            @media #{$big_mobile}{
+              width: 35px;
+              height: 35px;
+              right: 10px;
+            }
+        }
+    }
+    
+    .mySwiper2{
+        .swiper-next{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .mySwiper2{
+        .swiper-prev{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .mySwiper{
+      .swiper{
+        .swiper-wrapper{
+          // gap: 0 20px;
+          .swiper-slide{
+            // width: calc(25% - 50px);
+            width: 20%;
+          }
+        }
+      }
+    }
+    .mySwiper{
+      .swiper-slide{
+        img {
+            display: block;
+            // min-width: 110px;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+      }
+    }
+}
+
+        

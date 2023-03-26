@@ -1,0 +1,74 @@
+.other_photos{
+    padding: 80px 0;
+    background-color: #F3F3F3;
+    .other_photos_block{
+        .section_title{
+            margin-bottom: 60px;
+            @media #{$big_tab}{
+                margin-bottom: 40px;
+            }
+        }
+        .other_photos_boxs{
+            display: flex;
+            align-items: center;
+            gap: 0 30px;
+            @media #{$laptop}{
+                gap: 0 20px;
+            }
+            @media #{$big_tab}{
+                flex-direction: column;
+                gap: 20px 0;
+            }
+            .other_photos_item{
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                width: calc(33% - 20px);
+                @media #{$laptop}{
+                    width: calc(33% - 13px);
+                }
+                @media #{$big_tab}{
+                    gap: 0 15px;
+                    width: 100%;
+                }
+                .other_photos_left{
+                    a{
+                        img{
+                            @media #{$laptop}{
+                                width: 160px;
+                            }
+                        }
+                    }
+                }
+                .other_photo_right{
+                    display: flex;
+                    flex-direction: column;
+                    .other_photos_title{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #272727;
+                        margin-bottom: 20px;
+                    }
+                    .other_photos_view{
+                        a{
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #272727;
+                            padding: 10px 15px;
+                            border: 1px solid #272727;
+                            display: block;
+                            transition: all ease 0.5s;
+                            &:hover{
+                                color: #F3F3F3;
+                                background-color: #272727;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

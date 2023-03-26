@@ -1,0 +1,101 @@
+.image_catalog{
+    padding-bottom: 80px;
+    background: #F3F3F3;
+    .image_catalog_block{
+        .subtitle{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #272727;
+            margin-bottom: 60px;
+        }
+        .img_boxs{
+            display: flex;
+            // align-items: center;
+            gap: 0 32px;
+            justify-content: space-between;
+            @media #{$laptop}{
+                gap: 0 20px;
+            }
+            @media #{$big_tab}{
+                flex-wrap: wrap;
+                // flex-direction: column;
+                gap: 30px 10px;
+            }
+            @media #{$small_tab}{
+                flex-direction: column;
+            }
+            .img_box{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: calc(25% - 24px);
+                @media #{$laptop}{
+                    width: calc(25% - 15px);
+                }
+                @media #{$big_tab}{
+                    width: calc(50% - 5px);
+                }
+                @media #{$small_tab}{
+                    width: 100%;
+                }
+                .main_img{
+                    margin-bottom: 30px;
+                    @media #{$big_tab}{
+                        // width: 315px;
+                        height: 300px;
+                        width: 100%;
+                    }
+                    @media #{$small_tab}{
+                        height: 250px;
+                        object-fit: cover;
+                    }
+                }
+                .view_img{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 6px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #BF9A45;
+                    position: absolute;
+                    bottom: 40%;
+                    left: 17px;
+                    @media #{$laptop}{
+                       bottom: 45%;
+                       display: block;
+                    }
+                    @media #{$big_tab}{
+                        bottom: 35%;
+                    }
+                }
+                .title{
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #BF9A45;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 120%;
+                    color: #272727;
+                    @media #{$laptop}{
+                        font-size: 27px;
+                    }
+                    @media #{$big_tab}{
+                        font-size: 22px;
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                .img_box_bottom{
+                    padding-top: 20px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    color: #BF9A45;
+                }
+            }
+        }
+    }
+}

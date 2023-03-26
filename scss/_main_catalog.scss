@@ -1,0 +1,58 @@
+.main{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-color: #F3F3F3;
+    .main_block{
+        display: flex;
+        gap: 0 30px;
+        @media #{$laptop}{
+            gap: 0 20px;
+        }
+        @media #{$big_tab}{
+            gap: 30px 0;
+            flex-direction: column;
+        }
+        .main_content{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            @media #{$big_tab}{
+                width: 100%;
+            }
+            .section_title{
+                width: 100%;
+                @media #{$big_tab}{
+                    font-size: 30px;
+                }
+            }
+            .subtitle{
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 150%;
+                color: #272727;
+                @media #{$laptop}{
+                    font-size: 24px;
+                }
+                @media #{$big_tab}{
+                    font-size: 22px;
+                }
+            }
+        }
+        .main_right{
+            a{
+                img{
+                    @media #{$laptop}{
+                        width: 580px;
+                    }
+                    @media #{$big_tab}{
+                        width: 90%;
+                    }
+                    @media #{$big_mobile}{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
