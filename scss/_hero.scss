@@ -1,6 +1,13 @@
 .hero{
     background: #272727;
     padding-bottom: 60px;
+    .container-fluid {
+    width: calc(((100% - 1300px) / 2) + 1300px);
+    margin: 0 0 0 auto;
+    @media #{$big_laptop}{
+    width: calc(((100% - 1120px) / 2) + 1120px);    
+    }
+    }
     @media #{$tab}{
         padding-bottom: 57px;
     }
@@ -10,6 +17,7 @@
         // gap: 0 100px;
         @media #{$big_laptop}{
             gap: 0 30px;
+            
         }
         @media #{$big_tab}{
             flex-direction: column;

@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+.container-fluid {
+  width: calc((100% - 1300px) / 2 + 1300px);
+  margin: 0 0 0 auto;
+}
+
 .delivery_btn {
   font-weight: 400;
   font-size: 14px;
@@ -358,15 +363,6 @@ header .header_block .header_actions ul li a:hover {
   background: #272727;
   padding-bottom: 60px;
 }
-.hero .container-fluid {
-  width: calc((100% - 1300px) / 2 + 1300px);
-  margin: 0 0 0 auto;
-}
-@media (max-width: 1400px) {
-  .hero .container-fluid {
-    width: calc((100% - 1120px) / 2 + 1120px);
-  }
-}
 @media (max-width: 1024px) {
   .hero {
     padding-bottom: 57px;
@@ -571,7 +567,8 @@ header .header_block .header_actions ul li a:hover {
   display: block;
   width: 100%;
   height: 606px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1200px) {
   .hero_right .swiper-slide img {
@@ -1324,7 +1321,8 @@ header .header_block .header_actions ul li a:hover {
   .our_works .our_works_block .our_works_box .our_work_item .our_work_item_left img {
     width: 100%;
     height: 370px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1495,7 +1493,8 @@ header .header_block .header_actions ul li a:hover {
 @media (max-width: 768px) {
   .image_catalog .image_catalog_block .img_boxs .img_box .main_img {
     height: 250px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .image_catalog .image_catalog_block .img_boxs .img_box .view_img {
@@ -2209,7 +2208,8 @@ footer .footer_bottom a {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .white_flowers_left .mySwiper2 {
   position: relative;
@@ -2273,7 +2273,8 @@ footer .footer_bottom a {
 .white_flowers_left .mySwiper .swiper-slide img {
   display: block;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -2535,6 +2536,13 @@ footer .footer_bottom a {
   outline: none;
   border-left: none;
 }
+.for_walls .for_walls_block .decors .decors_right .decors_right_top .input-group .form-control::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #272727;
+  opacity: 0.75;
+}
 .for_walls .for_walls_block .decors .decors_right .decors_right_top .input-group .form-control::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -2601,7 +2609,8 @@ footer .footer_bottom a {
 .for_walls .for_walls_block .decors .decors_right .decor_fish .fish_item a img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 576px) {
   .for_walls .for_walls_block .decors .decors_right .decor_fish .fish_item a img {
@@ -2725,7 +2734,6 @@ footer .footer_bottom a {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-weight: 400;
   font-size: 20px;
@@ -2787,8 +2795,6 @@ footer .footer_bottom a {
   height: 10px;
   border: solid #BF9A45;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 @media (max-width: 1200px) {
