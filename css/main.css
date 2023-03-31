@@ -29,13 +29,11 @@ a {
 .delivery_btn:hover {
   background: #272727;
   color: #BF9A45;
-  border-color: #BF9A45;
 }
 
 .delivery_btn:focus {
   background: #272727;
   color: #BF9A45;
-  border-color: #BF9A45;
 }
 
 .call_measurer_btn {
@@ -52,12 +50,12 @@ a {
 }
 
 .call_measurer_btn:hover {
-  color: #272727;
+  color: #fff;
   background: #BF9A45;
 }
 
 .call_measurer_btn:focus {
-  color: #272727;
+  color: #fff;
   background: #BF9A45;
 }
 
@@ -138,7 +136,7 @@ a {
 
 header {
   background: #272727;
-  padding: 20px 0 27px 0;
+  padding: 20px 0 27px calc((100% - 1300px) / 2);
 }
 header .header_block {
   display: flex;
@@ -149,6 +147,8 @@ header .header_block {
 @media (max-width: 1200px) {
   header .header_block {
     gap: 0 75px;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1024px) {
@@ -274,7 +274,6 @@ header .header_block .header_actions ul li a:hover {
 .menu_mobile ul {
   display: flex;
   flex-direction: column;
-  gap: 30px 0;
 }
 @media (max-width: 576px) {
   .menu_mobile ul {
@@ -293,9 +292,8 @@ header .header_block .header_actions ul li a:hover {
   text-align: center;
   color: #BF9A45;
   font-family: "Montserrat", sans-serif;
-  padding: 25px 30px;
-  border: 1px solid #BF9A45;
-  border-radius: 20px;
+  padding: 28px 30px;
+  border-bottom: 1px solid #1c1810;
   display: block;
 }
 .menu_mobile ul li a:hover {

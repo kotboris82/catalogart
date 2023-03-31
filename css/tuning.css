@@ -1,0 +1,15 @@
+@media (max-width: 1024px){
+.hero {
+    padding-bottom: 57px;
+    padding: 24px;
+}
+.hero .container-fluid {
+    width: 100%;
+}
+}
+
+@media (max-width: 1400px){
+.header {
+    padding: 20px 0 27px calc((100% - 1130px) / 2);
+}
+}
