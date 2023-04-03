@@ -1,3 +1,32 @@
+.form-control {
+    color: #212529;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 300px;
+    margin: 0px auto 20px auto;
+    font-size: 18px;
+    padding: 16px 30px;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #b89c48;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hystmodal .delivery_btn {
+    width: 100%;
+    max-width: 280px;
+}
+
 @media (max-width: 1024px){
 .hero {
     padding-bottom: 57px;
@@ -9,7 +38,7 @@
 }
 
 @media (max-width: 1400px){
-.header {
+header {
     padding: 20px 0 27px calc((100% - 1130px) / 2);
 }
 }

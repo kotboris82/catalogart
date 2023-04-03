@@ -86,7 +86,7 @@
                 <div class="hero_block">
                     <div class="hero_content">
                         <div class="subtitle">Печать за 1 день</div>
-                        <div class="hero_title">Натяжные потолки</br> с художественной</br> фотопечатью</br> от 650Р за м² </br>за 1 день</div>
+                        <div class="hero_title">Натяжные потолки<br> с художественной<br> фотопечатью<br> от 650Р за м² </br>за 1 день</div>
                         <div class="hero_actions">
                             <a href="#" class="delivery_btn">Заказать доставку потолков по всей РФ</a>
                             <a href="#" class="call_measurer_btn">Вызвать замерщика</a>
@@ -478,11 +478,12 @@
 <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
             <a class="hystmodal__close" data-hystclose="">Закрыть</a>
             <div class="hystmodal__styled">
-                <div class="loginblock__h1">Заказать обратный звонок</div>
-                <form action="#" method="POST">
+                <form class="p-4 text-center" action="#" method="POST">
 <div class="mb-3 з-3">
-  <label for="formGroupExampleInput" class="form-label">Телефон</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+7 977 777 77 77">
+<div class="form-heading">Заказать обратный звонок</div>
+  <label for="phone" class="form-label">Телефон</label>
+  <input type="tel" class="form-control" id="phone" placeholder="+7 977 777 77 77">
+  <a href="#" class="delivery_btn">Отправить</a>
 </div>
                 </form>
             </div>
@@ -516,9 +517,17 @@
     
     const myModal = new HystModal({
     linkAttributeName: "data-hystmodal",
-	//settings (optional). see API
+    catchFocus: true,
+    waitTransitions: true,
 });
-    
+window.addEventListener('load', function() {
+  var modal = document.querySelector('.hystmodal'); // замените селектор на свой
+
+  modal.addEventListener('hystmodal:hide', function (e) {
+    window.location.hash = '';
+  });
+});
+
 </script>
 </body>
 </html>
