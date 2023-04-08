@@ -23,6 +23,7 @@
 <body style="background-color: #F3F3F3;">
     <div class="wrapper">
         <header>
+            <div class="container">
                 <div class="header_block">
                     <div class="header_logo">
                         <a href="#"><img src="./imgs/logo_header.svg" alt=""></a>
@@ -78,6 +79,7 @@
                         </ul>
                     </div>
                 </div>
+            </div>
         </header>
         <div class="breadcrumb_menu">
             <div class="container">
@@ -241,7 +243,7 @@
                             <a href="#"><img src="./imgs/telegram.svg" alt=""></a>
                         </div>
                         <div class="footer_btn">
-                            <a href="#" class="call_measurer_btn">Заказать звонок</a>
+                            <a href="#" class="call_measurer_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</a>
                         </div>
                     </div>
                     <div class="footer_links" style="padding-top: 13px;">
@@ -295,6 +297,31 @@
                 </div>
             </div>
         </footer>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Заказать обратный звонок</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="name" class="form-control" id="name" placeholder="Андрей">
+                        <label for="tel" class="col-form-label">Телефон:</label>
+                        <input type="text" class="form-control" id="tel" placeholder="+7 977 777 77 77">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                  </div>
+              </div>
+            </div>
+        </div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -338,5 +365,6 @@
     
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

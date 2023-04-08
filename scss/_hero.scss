@@ -1,34 +1,54 @@
 .hero{
     background: #272727;
-    padding-bottom: 60px;
-    .container-fluid {
-    width: calc(((100% - 1300px) / 2) + 1300px);
-    margin: 0 0 0 auto;
-    @media #{$big_laptop}{
-    width: calc(((100% - 1120px) / 2) + 1120px);    
-    }
-    }
+    // padding-bottom: 60px;
     @media #{$tab}{
-        padding-bottom: 57px;
+        // padding-bottom: 57px;
+        padding-bottom: 35px;
     }
-    .hero_block{
+    .hero_block.desc{
         display: flex;
         justify-content: space-between;
+        height: 685px;
         // gap: 0 100px;
+        @media #{$laptop}{
+            height: 545px;
+        }
+        @media #{$tab}{
+            height: 511px;
+        }
+        .container{
+            width: 600px;
+            margin-right: 60px;
+            @media #{$big_laptop}{
+                width: 538px;
+                margin-right: 0;
+            }
+            @media #{$laptop}{
+                width: 485px;
+            }
+            @media #{$big_tab}{
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
         @media #{$big_laptop}{
             gap: 0 30px;
-            
         }
         @media #{$big_tab}{
             flex-direction: column;
+            display: none;
         }
         .hero_content{
             display: flex;
             flex-direction: column;
             // align-items: center;
             justify-content: center;
+            // @media #{$laptop}{
+            //     width: 49%;
+            // }
+            margin-top: 99px;
             @media #{$laptop}{
-                width: 49%;
+                margin-top: 30px;
             }
             @media #{$big_tab}{
                 margin-bottom: 36px;
@@ -87,19 +107,7 @@
             }
         }
         
-            // .hero_right{
-                
-            //     img{
-            //         @media #{$laptop}{
-            //             width: 440px;
-            //             height: 465px;
-            //             object-fit: cover;
-            //         }
-            //         @media #{$big_tab}{
-            //             width: 100%;
-            //         }
-            //     }
-            // }
+            
         
     }
     .hero_bottom{
@@ -125,8 +133,8 @@
                 width: 245px;
                 // height: 73px;
                 // bottom: 62px;
-                height: 80px;
-                bottom: 25px;
+                height: 100px;
+                bottom: -70px;
             }
             @media #{$big_tab}{
                 background: #272727;
@@ -139,7 +147,7 @@
             line-height: 19px;
             color: #272727;
             bottom: 0;
-            top: 10px;
+            top: 20px;
             right: 180px;
             z-index: 1000;
             @media #{$laptop}{
@@ -148,7 +156,7 @@
             @media #{$tab}{
                 // top: -64px;
                 // right: 95px;
-                top: -57px;
+                top: 20px;
                 bottom: 87px;
             }
             @media #{$big_tab}{
@@ -165,6 +173,9 @@
                 right: 30%;
             }
         }
+        @media #{$big_tab}{
+            display: none;
+        }
     }
 }
 
@@ -175,11 +186,11 @@
         width: 47%;
     }
     @media #{$big_tab}{
-        width: 90%;
-    }
-    @media #{$big_mobile}{
         width: 100%;
     }
+    // @media #{$big_mobile}{
+    //     width: 100%;
+    // }
     .mySwiper{
         position: relative;
         width: 100%;
@@ -205,12 +216,13 @@
             height: 606px;
             object-fit: cover;
             @media #{$laptop}{
-                width: 440px;
+                // width: 440px;
                 height: 465px;
             }
             @media #{$big_tab}{
-                width: 330px;
+                // width: 330px;
                 height: 232px;
+                // width: 100%;
             }
           }
       }
@@ -219,7 +231,7 @@
         .swiper-next{
             position: absolute;
             // top: 0;
-            bottom: -20px;
+            bottom: 60px;
             margin: auto;
             display: flex;
             align-items: center;
@@ -228,6 +240,7 @@
             z-index: 300;
             @media #{$big_tab}{
                 left: 40px;
+                bottom: 35px;
             }
         }
     }
@@ -235,7 +248,7 @@
         .swiper-prev{
             position: absolute;
             // top: 0;
-            bottom: -20px;
+            bottom: 60px;
             margin: auto;
             display: flex;
             align-items: center;
@@ -243,7 +256,154 @@
             z-index: 200;
             @media #{$big_tab}{
                 left: 0;
+                bottom: 35px;
             }
         }
     }
+}
+.hero{
+    .container.mobile_tab{
+        display: none;
+        @media #{$big_tab}{
+            display: block;
+            padding-top: 40px;
+            .hero_content{
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                // @media #{$laptop}{
+                //     width: 49%;
+                // }
+                @media #{$big_tab}{
+                    margin-bottom: 36px;
+                    width: 100%;
+                }
+                .subtitle{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #F3F3F3;
+                    margin-bottom: 44px;
+                }
+                .hero_title{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 61px;
+                    color: #F3F3F3;
+                    margin-bottom: 44px;
+                    @media #{$laptop}{
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                    @media #{$big_tab}{
+                        font-size: 33px;
+                        line-height: 40px;
+                    }
+                }
+                .hero_actions{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 39px;
+                    @media #{$big_laptop}{
+                        flex-direction: column;
+                        gap: 20px 0;
+                        a{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    @media #{$laptop}{
+                        // gap: 0 15px;
+                        gap: 15px 0;
+                        // a{
+                        //     padding: 15px 30px;
+                        // }
+                    }
+                    @media #{$tab}{
+                        flex-direction: column;
+                        gap: 14px 0;
+                        align-items: start;
+                        a{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            .hero_bottom{
+                display: flex;
+                align-items: center;
+                gap: 0 21px;
+                justify-content: center;
+                padding-left: 170px;
+                padding-top: 30px;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 350px;
+                    height: 120px;
+                    background: #F3F3F3;
+                    right: 0;
+                    bottom: -60px;
+                    @media #{$laptop}{
+                        width: 250px;
+                    }
+                    @media #{$tab}{
+                        width: 245px;
+                        // height: 73px;
+                        // bottom: 62px;
+                        height: 100px;
+                        bottom: -35px;
+                    }
+                    @media #{$big_tab}{
+                        background: #272727;
+                    }
+                }
+                .adress{
+                    position: absolute;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #272727;
+                    bottom: 0;
+                    top: 10px;
+                    right: 180px;
+                    z-index: 1000;
+                    @media #{$laptop}{
+                        right: 90px;
+                    }
+                    @media #{$tab}{
+                        // top: -64px;
+                        // right: 95px;
+                        top: -5px;
+                        bottom: 87px;
+                    }
+                    @media #{$big_tab}{
+                        // top: 30px;
+                        // right: 20px;
+                        color: #F3F3F3;
+                        top: 0;
+                        right: 55%;
+                    }
+                    @media #{$small_tab}{
+                        right: 40%;
+                    }
+                    @media #{$mobile}{
+                        right: 30%;
+                    }
+                }
+                @media #{$big_tab}{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.mySwiper.two{
+    top: -30px;
+}
+.swiper.add{
+    height: 80px;
 }

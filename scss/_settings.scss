@@ -25,10 +25,12 @@ a{
 .delivery_btn:hover{
     background: #272727;
     color: #BF9A45;
+    border-color: #BF9A45;
 }
 .delivery_btn:focus{
     background: #272727;
     color: #BF9A45;
+    border-color: #BF9A45;
 }
 .call_measurer_btn{
     font-weight: 400;
@@ -43,11 +45,11 @@ a{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .call_measurer_btn:hover{
-    color: #fff;
+    color: #272727;
     background: #BF9A45;
 }
 .call_measurer_btn:focus{
-    color: #fff;
+    color: #272727;
     background: #BF9A45;
 }
 .section_title{
@@ -140,3 +142,71 @@ a{
 //     margin-bottom: 45px;
 //     opacity: 0.5;
 // }
+
+
+
+
+
+// modalka
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #BF9A45;
+    --bs-btn-border-color: #BF9A45;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #BF9A45;
+    --bs-btn-hover-border-color: #BF9A45;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #BF9A45;
+    --bs-btn-active-border-color: #BF9A45;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #BF9A45;
+    --bs-btn-disabled-border-color: #BF9A45;
+}
+.modal-content{
+    padding: 30px 40px;
+    @media #{$small_tab}{
+        padding: 25px 30px;
+    }
+    @media #{$big_mobile}{
+        padding: 20px;
+    }
+}
+.modal-title{
+    @media #{$mobile}{
+        font-size: 18px !important;
+    }
+    @media #{$small_mobile}{
+        font-size: 16px !important;
+    }
+}
+.form-label{
+    @media #{$small_mobile}{
+        font-size: 15px;
+    }
+}
+.modal-body{
+    input{
+        height: 60px;
+        @media #{$big_mobile}{
+            height: 42px;
+        }
+    }
+}
+.modal-footer{
+    justify-content: center;
+    button{
+        display: block;
+        width: 100%;
+        height: 60px;
+        transition: all ease 0.4s;
+        @media #{$big_mobile}{
+            font-size: 14px;
+            height: 42px;
+        }
+    }
+}
+.modal-header{
+    padding: 10px 0 25px 12px;
+}
