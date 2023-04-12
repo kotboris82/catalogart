@@ -255,27 +255,27 @@ header .header_block .container {
     display: none;
   }
 }
-header .header_block nav ul {
+header .header_block nav > ul {
   display: flex;
   align-items: center;
   gap: 0 30px;
 }
 @media (max-width: 1200px) {
-  header .header_block nav ul {
+  header .header_block nav > ul {
     gap: 0 20px;
   }
 }
 @media (max-width: 1024px) {
-  header .header_block nav ul {
+  header .header_block nav > ul {
     display: none;
   }
 }
 @media (max-width: 1200px) {
-  header .header_block nav ul li:nth-child(2n+1) {
+  header .header_block nav > ul li:nth-child(2n+1) {
     display: none;
   }
 }
-header .header_block nav ul li a {
+header .header_block nav > ul li a {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -283,7 +283,7 @@ header .header_block nav ul li a {
   color: #F3F3F3;
   transition: all ease 0.4s;
 }
-header .header_block nav ul li a:hover {
+header .header_block nav > ul li a:hover {
   color: #BF9A45;
 }
 header .header_block .header_actions {

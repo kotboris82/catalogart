@@ -34,7 +34,7 @@ header{
             @media #{$tab}{
                 display: none;
             }
-            ul{
+            >ul{
                 display: flex;
                 align-items: center;
                 gap: 0 30px;

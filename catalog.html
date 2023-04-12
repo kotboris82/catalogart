@@ -41,13 +41,22 @@
                             </ul>
                         </div>
                     </div>
-                    <nav>
+                    <nav class="navbar-collapse" id="navbarNavDarkDropdown">
                         <ul>
                             <li><a href="index.html">О компании</a></li>
                             <li><a href="mosaic.html">Натяжные потолки <br> с фотопечатью</a></li>
                             <li><a href="index.html">Портфолио</a></li>
                             <li><a href="catalog.html">Фотопечать <br> на ткани</a></li>
-                            <li><a href="photo_printing.html">Виды <br> фотопечати</a></li>
+                            <li><a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Виды <br> фотопечати
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark"
+                                    aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Вид один </a></li>
+                                    <li><a class="dropdown-item" href="#">Вид другой</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <!-- <div class="tab_menu">
@@ -96,7 +105,8 @@
                         <li><a href="mosaic.html">Натяжные потолки с фотопечатью</a></li>
                         <li><a href="index.html">Портфолио</a></li>
                         <li><a href="catalog.html">Фотопечать на ткани</a></li>
-                        <li><a href="photo_printing.html">Виды фотопечати</a></li>
+                        <li><a href="#">Вид печати один</a></li>
+                        <li><a href="#">Вид печати два</a></li>
                     </ul>
                 </div>
             </div>

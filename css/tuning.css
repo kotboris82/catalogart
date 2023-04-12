@@ -1,3 +1,18 @@
 .work_with_box .delivery_btn:hover {
     border-color: #272727;
 }
+
+header .header_block .header_actions {
+    background: #fff;
+}
+
+.navbar-collapse .dropdown-menu {
+border-radius: 0;
+background: #272727;
+}
+.navbar-collapse li {
+    text-align: center;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #BF9A45 !important;
+}
