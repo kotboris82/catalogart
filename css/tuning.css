@@ -3,16 +3,24 @@
 }
 
 header .header_block .header_actions {
-    background: #fff;
+    background: #f3f3f3;
 }
 
 .navbar-collapse .dropdown-menu {
-border-radius: 0;
-background: #272727;
+    border-radius: 0;
+    background: #272727;
+    border-top: 2px solid rgb(184, 156, 72);
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    top: 36px !important;
 }
 .navbar-collapse li {
     text-align: center;
 }
 .nav-link:focus, .nav-link:hover {
     color: #BF9A45 !important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #00000000;
 }

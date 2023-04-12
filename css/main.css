@@ -123,6 +123,7 @@ a {
 
 .wrapper {
   overflow: hidden;
+  background: #f3f3f3;
 }
 
 .breadcrumb_menu {
