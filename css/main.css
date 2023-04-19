@@ -2973,6 +2973,11 @@ footer .footer_bottom a {
   display: flex;
   flex-direction: column;
   width: calc(33% - 20px);
+  /*                         &:nth-child(n + 7){
+                              @media (max-width: 576px){
+                                  display: none;
+                              }
+                          } */
 }
 @media (max-width: 1200px) {
   .for_walls .for_walls_block .decors .decors_right .decor_fish .fish_item {
@@ -2982,11 +2987,6 @@ footer .footer_bottom a {
 @media (max-width: 576px) {
   .for_walls .for_walls_block .decors .decors_right .decor_fish .fish_item {
     width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .for_walls .for_walls_block .decors .decors_right .decor_fish .fish_item:nth-child(n+7) {
-    display: none;
   }
 }
 .for_walls .for_walls_block .decors .decors_right .decor_fish .fish_item a {
